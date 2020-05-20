@@ -15,32 +15,32 @@ The main features included in this app are the following:
 
 ## Use Cases
 
-![](./rakuten-documentation/documentation/use-cases.jpg)
+![](./rakuten-documentation/use-cases.jpg)
 
 ## Workflow
 
-![](./rakuten-documentation/documentation/workflow.jpg)
+![](./rakuten-documentation/workflow.jpg)
 
 # Technical Description
 
 ## Blocks
 
-![](./rakuten-documentation/documentation/blocks.jpg)
+![](./rakuten-documentation/blocks.jpg)
 
 ## Modules
 
-![](./rakuten-documentation/documentation/modules.jpg)
+![](./rakuten-documentation/modules.jpg)
 
 # Test Code Coverage
 
 ## Sync Action Creators
 
-![](./rakuten-documentation/documentation/actions.jpg)
+![](./rakuten-documentation/actions.JPG)
 
 ## Async Action Creators
 
-![](./rakuten-documentation/documentation/logic.jpg)
+![](./rakuten-documentation/logic.JPG)
 
 ## Reducers
 
-![](./rakuten-documentation/documentation/reducers.jpg)
+![](./rakuten-documentation/reducers.JPG)
