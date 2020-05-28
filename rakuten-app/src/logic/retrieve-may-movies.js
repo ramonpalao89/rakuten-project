@@ -1,7 +1,7 @@
 import { mayMoviesSuccess, mayMoviesFailure } from '../actions/may-movies-actions'
 import axios from 'axios'
 
-export const retrieveMayMovies = () => {
+const retrieveMayMovies = () => {
     return async (dispatch) => {
         try {
             const response = await axios.get('https://cors-anywhere.herokuapp.com/https://gizmo.rakuten.tv/v3/lists/en-mayo-mira-todo-lo-que-quieras?classification_id=5&device_identifier=web&locale=es&market_code=es')
@@ -18,3 +18,5 @@ export const retrieveMayMovies = () => {
         }
     }
 }
+
+export default retrieveMayMovies

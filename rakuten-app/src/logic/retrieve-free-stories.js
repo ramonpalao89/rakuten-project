@@ -1,7 +1,7 @@
 import { freeStoriesSuccess, freeStoriesFailure } from '../actions/free-stories-actions'
 import axios from 'axios'
 
-export const retrieveFreeStories = () => {
+const retrieveFreeStories = () => {
     return async (dispatch) => {
         try {
             const response = await axios.get('https://cors-anywhere.herokuapp.com/https://gizmo.rakuten.tv/v3/lists/free-rakuten-stories?classification_id=5&device_identifier=web&locale=es&market_code=es')
@@ -17,3 +17,5 @@ export const retrieveFreeStories = () => {
         }
     }
 }
+
+export default retrieveFreeStories

@@ -1,17 +1,10 @@
-import React, { useEffect, useRef } from 'react'
-import { retrievePopularMovies } from '../logic/retrieve-popular-movies'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useRef } from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-function Populares() {
+function MoviesLanding({movieData}) {
 
-    useEffect(() => {
-        dispatch(retrievePopularMovies())
-    }, [])
-
-    const movieData = useSelector(state => state.popularMovie.popularMovie.data)
     const error = useSelector(state => state.popularMovie.error)
-    const dispatch = useDispatch()
     const movieRow = useRef()
 
 
@@ -41,4 +34,4 @@ function Populares() {
     )
 }
 
-export default Populares
+export default MoviesLanding

@@ -1,7 +1,7 @@
 import { estrenosSpanishSuccess, estrenosSpanishFailure } from '../actions/estrenos-spanish-actions'
 import axios from 'axios'
 
-export const retrieveEstrenosSpanish = () => {
+const retrieveEstrenosSpanish = () => {
     return async (dispatch) => {
         try {
             const response = await axios.get('https://cors-anywhere.herokuapp.com/https://gizmo.rakuten.tv/v3/lists/estrenos-espanoles?classification_id=5&device_identifier=web&locale=es&market_code=es')
@@ -17,3 +17,5 @@ export const retrieveEstrenosSpanish = () => {
         }
     }
 }
+
+export default retrieveEstrenosSpanish

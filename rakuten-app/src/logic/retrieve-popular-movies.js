@@ -1,7 +1,7 @@
 import { popularMovieRequest, popularMovieSuccess, popularMovieFailure } from '../actions/populares-actions'
 import axios from 'axios'
 
-export const retrievePopularMovies = () => {
+const retrievePopularMovies = () => {
     return async (dispatch) => {
        dispatch(popularMovieRequest)
         
@@ -21,3 +21,5 @@ export const retrievePopularMovies = () => {
         }
     }
 }
+
+export default retrievePopularMovies

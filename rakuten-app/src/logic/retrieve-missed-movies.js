@@ -1,7 +1,7 @@
 import { siTePerdisteSuccess, siTePerdisteFailure } from '../actions/si-te-perdiste-actions'
 import axios from 'axios'
 
-export const retrieveMissedMovies = () => {
+const retrieveMissedMovies = () => {
     return async (dispatch) => {
         try {
             const response = await axios.get('https://cors-anywhere.herokuapp.com/https://gizmo.rakuten.tv/v3/lists/si-te-perdiste?classification_id=5&device_identifier=web&locale=es&market_code=es')
@@ -18,3 +18,5 @@ export const retrieveMissedMovies = () => {
         }
     }
 }
+
+export default retrieveMissedMovies
